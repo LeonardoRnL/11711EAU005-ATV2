@@ -10,4 +10,4 @@ Depois, criamos um arquivo que faz uso do utilitário make, especificamente o GN
 
 O próximo passo foi o de criação do arquivo main.c, nele está o código principal que é o programa para piscar o LED. Para isso, tivemos que determinar qual pino o LED está conectado, assim como o tipo de sinal utilizado para operá-lo.
 
-Por fim foi escrito o arquivo linker scirpt, que tem o própostio de juntar os arquivos objetos gerados da compilação do nosso programa. Dentro de um ou outro arquivo gerado há referências, e chamadas a variáveis, funções e bibliotecas que não estão dentro de tal arquivo, assim o linker é usado para descrever como as diferentes seções desses códigos serão combinados em um único arquivo.
+Por fim foi escrito o arquivo linker script, que tem o própostio de juntar os arquivos objetos gerados da compilação do nosso programa. Dentro de um ou outro arquivo gerado há referências, e chamadas a variáveis, funções e bibliotecas que não estão dentro de tal arquivo, assim o linker é usado para descrever como as diferentes seções desses códigos serão combinados em um único arquivo.
