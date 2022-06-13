@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
         reg = *pGPIOA_IDR;
         reg &= (1 << 0);
 
-        if(reg = 1)
+        if(reg == 1)
         {
             *pGPIOC_BSRR = GPIO_BSRR_SET(13);
             for (uint32_t i = 0; i < LED_DELAY; i++)
@@ -137,7 +137,7 @@ int main(int argc, char *argv[])
             for (uint32_t i = 0; i < LED_DELAY; i++)
                 ;
         }
-        else if(reg = 0)
+        else if(reg == 0)
         {
             *pGPIOC_BSRR = GPIO_BSRR_SET(13);
             for (uint32_t i = 0; i < (LED_DELAY/5); i++)
